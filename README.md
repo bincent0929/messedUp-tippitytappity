@@ -58,3 +58,27 @@ classDiagram
         + get_history() string
   }
 ```
+
+```mermaid
+classDiagram
+  %% comment
+  class TypingTest{
+        - phrase: string
+        - attempt: string
+        - time_started: DateTime
+        - time_finished: DateTime
+        - time_elapsed: DateTime
+        - accuracy: float
+        - phrase_list vector~strings~
+        - name: string
+        - history: vector~TypingTest~
+        + start_test() string
+        + submit_attempt(text: string)
+        + get_speed() float
+        + get_accuracy() float
+        + get_phrase() string
+        + add_phrase(text: string)
+        + User(name: string)
+        + record_test(test: TypingTest)
+        + get_history() string
+  }
